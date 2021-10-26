@@ -8,10 +8,11 @@ jobs:
   audit_log:
     runs-on: ubuntu-latest
     name: Membership Audit Log
-
-     - name: Membership Audit Log Action
-       uses: svanboxel/org-audit-action@v1
-       with:
+   
+    steps:
+    - name: Membership Audit Log Action
+      uses: svanboxel/org-audit-action@v1
+      with:
          organization: 'krishh2512'
          token: ${{ secrets.TOKEN }}
          issue: true
