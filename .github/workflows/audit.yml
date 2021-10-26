@@ -11,7 +11,7 @@ jobs:
    
     steps:
     - name: Membership Audit Log Action
-      uses: svanboxel/org-audit-action@v1
+      uses: svanboxel/org-audit-action@master
       with:
          organization: 'krishh2512'
          token: ${{ secrets.TOKEN }}
